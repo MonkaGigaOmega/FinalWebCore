@@ -842,6 +842,89 @@
   color: #FF3E79;
 }
 
+.order-call {
+  color: #B5B6BC;
+  min-height: 676px;
+  width: 320px;
+  height: 100vh;
+  font-style: medium;
+  font-weight: 500;
+  box-shadow: -10px 0 50px -10px rgb(174, 174, 174);
+  background-color: #F9F9F9;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  right: -320px; /*При нажатии на кнопку сделаю 0 и будет ок*/
+  display: none;
+  flex-direction: column;
+  transition: left 1s ease;
+  border-left: 1px solid #D9FFF5;
+}
+.order-call__input {
+  width: 288px;
+  height: 48px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #EAEAEA;
+}
+.order-call__input-wrapper {
+  padding: 8px 16px;
+  margin: 0;
+}
+.order-call__confirm-text {
+  margin: 0 16px 19px 16px;
+  line-height: 16px;
+  font-size: 14px;
+}
+.order-call__confirm-text-important {
+  color: #FF3E79;
+}
+.order-call__submit-button {
+  width: 136px;
+  height: 32px;
+  background-color: #FF3E79;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+.order-call__submit-button-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+.order-call__submit-button-wrapper::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-image: url(./icons/str-right.svg);
+}
+.order-call__title {
+  display: flex;
+  margin-left: 12px;
+  color: #1B1C21;
+}
+.order-call__title::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  border-radius: 20px;
+  background-image: url(./icons/exit-burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: -265px;
+}
+
 .message-input {
   height: 118px;
   padding: 10px 16px 78px 16px;
