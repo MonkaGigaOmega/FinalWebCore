@@ -280,8 +280,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 1000); // Время должно совпадать с длительностью transition в CSS
   });
 });
-/*
-const closeMenuButton = document.querySelector('.header__button-exit-burger');
+
+const closeMenuButton = document.querySelector('.menu__header__button-exit-burger');
 const openMenuButton = document.querySelector('.header__button-burger');
 const bodyBlur = document.querySelector('.body-blur');
 openMenuButton.addEventListener('click', function () {
@@ -294,4 +294,4 @@ bodyBlur.addEventListener('click', function(){
   const menu = document.querySelector('.menu');
   bodyBlur.classList.remove('menu-open');
   menu.classList.remove('menu__active');
-});*/
+});

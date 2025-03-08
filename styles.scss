@@ -19,6 +19,16 @@
 .body{
     background-color:#F8F8F8;
     font-family: 'TT Lakes';
+    &-blur{
+        width:100vw;
+        height:100vh;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 10;
+        backdrop-filter: blur(8px);
+        display: none;
+    }
 }
 .main {
     background-color:#F8F8F8;
@@ -80,6 +90,7 @@
     justify-content: space-between;
 align-items: center;
 border-bottom:1px solid #41F6D7;
+padding:0 16px;
     &__extra {
         display: none;
     }
@@ -260,6 +271,9 @@ border-bottom:1px solid #41F6D7;
 left:-400px; 
 display:none;
 transition: left 1s ease; /* Добавляем плавный переход */
+&-open{
+    display:block;/*было в боди блюр*/
+}
 &__list {
     margin-top:46px;
     margin-bottom:10%;
@@ -505,7 +519,8 @@ background-color: #B5B6BC;
                 &::after{
                     content:"";
                     position: relative;
-                    left:-25px;
+                    left: 115px;
+                    top: -40px;
                     width:20px;
                     height:20px;
                     background-image:url(./icons/str-right.svg);
@@ -645,6 +660,7 @@ background-color: #B5B6BC;
             &-work{
                 flex:  1 1;
                 max-width: 100%;
+                margin-top:0;
             }
             }
     .repair-slider__pagination{
@@ -746,6 +762,99 @@ background-color: #B5B6BC;
         }
     }
 }
+.feedback{
+    color:#B5B6BC;
+    &-menu{
+    min-height:676px;
+    width:320px;
+    height:100vh;
+    font-style: medium;
+    font-weight: 500;
+    box-shadow:-10px 0 50px -10px rgb(174, 174, 174);
+    background-color: #F9F9F9;
+    position: fixed;
+    top: 0; 
+    z-index: 101;
+right:-320px;/*При нажатии на кнопку сделаю 0 и будет ок*/
+display:none;
+flex-direction: column;
+transition: left 1s ease;
+border-left: 1px solid #D9FFF5;
+&__title{
+    display: flex;
+    margin-left:12px;
+    &::after{
+        content: "";
+        width:40px;
+        height:40px;
+        background-color: #FF3E79;
+        border-radius: 20px;
+        background-image: url(./icons/exit-burger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        left:-265px;
+    }
+}
+&__submit{
+&-button{
+    width:136px;
+    height:32px;
+    background-color: #FF3E79;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    text-align: left;
+    padding-left: 20px;
+    &-wrapper{
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        &::after{
+            content: "";
+            width: 20px;
+            height: 20px;
+            left:-20px;
+            top:6px;
+            background-repeat: no-repeat;
+            background-position: center;
+        position: relative;
+            background-image: url(./icons/str-right.svg);
+        }
+    }
+}
+}
+&__input{
+    width:288px;
+    height:48px;
+    padding:10px 16px;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 10px;
+    border:1px solid #EAEAEA;
+    &-wrapper{
+        padding:8px 16px;
+        margin:0;
+    }
+    }
+    &__confirm{
+        &-text{
+        margin: 0 16px 19px 16px;
+        line-height: 16px;
+        font-size: 14px;
+        &-important{
+            color:#FF3E79;
+        }
+    }
+    }
+}
+}
+.message{
+&-input{
+    height:118px;
+    padding:10px 16px 78px 16px;
+}
+}
 .footer{
     color:#7E7E82;
     text-align: center;
@@ -790,6 +899,12 @@ background-color: #B5B6BC;
             &-button{
                 left:0;
                 top:0;
+                &-wrapper{
+                    &::after{
+                        top:0px;
+                        left:-25px;
+                    }
+                }
             }
             &-title{
                 display: none;
