@@ -410,6 +410,13 @@
   border-radius: 4px;
 }
 
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -440,7 +447,7 @@
   padding: 0 16px;
   overflow: hidden;
 }
-.price-list-slider__pagination {
+.price-list-slider .price-list-slider__pagination {
   top: 320px;
   min-width: 320px;
   max-width: 767px;
@@ -578,7 +585,7 @@
   display: flex;
   justify-content: space-between;
 }
-.technic-list-slider__pagination {
+.technic-list-slider .technic-list-slider__pagination {
   top: 280px;
   min-width: 320px;
   max-width: 767px;
@@ -636,11 +643,14 @@
   flex: 1 1;
   max-width: 100%;
 }
-.repair-slider__pagination {
+.repair-slider .repair-slider__pagination {
   top: 195px;
   min-width: 320px;
   max-width: 767px;
   height: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 .repair-list {
   min-width: 320px;
@@ -699,12 +709,118 @@
   transition: height 0.7s ease;
 }
 
+.commercial {
+  margin-top: 60px;
+}
+.commercial__text {
+  margin: 0 16px;
+  padding-bottom: 16px;
+}
+.commercial__button {
+  margin: 0 16px 40px 16px;
+  width: 200px;
+  height: 52px;
+  background-color: #F9F9F9;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  padding: none;
+}
+.commercial__button-wrapper {
+  display: flex;
+  align-items: center;
+}
+.commercial__button-wrapper::after {
+  content: "";
+  width: 24px;
+  position: relative;
+  left: -110px;
+  top: -7px;
+  height: 24px;
+  background-position: center;
+  background-image: url(./icons/pink-str.svg);
+}
+
 @media (min-width: 768px) {
   .main__title {
     margin: 0 0 0 24px;
   }
   .main__title-wrapper {
     margin-bottom: 32px;
+  }
+  .price-list {
+    min-height: 598px;
+    margin: 0;
+    min-width: 768px;
+    max-width: 1119px;
+  }
+  .price-list__slide-button {
+    left: 0;
+    top: 0;
+  }
+  .price-list__slide-title {
+    display: none;
+  }
+  .price-list__slide-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 16px;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+  }
+  .price-list-slider {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 380px;
+    padding: 0;
+    margin: 0 24px 24px 24px;
+  }
+  .price-list-slider-pagination {
+    display: none;
+  }
+  .price-list-slider-wrapper {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 24px;
+  }
+  .price-list-header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 196px 0 16px;
+  }
+  .price-list-header-content__item-name {
+    flex: 1 1;
+    max-width: 100%;
+  }
+  .price-list-header-content__item-price {
+    margin-right: 45px;
+  }
+  .price-list__header {
+    min-width: 767px;
+    height: 56px;
+    max-width: 1120px;
+    padding-left: 24px;
+    margin-bottom: 16px;
+  }
+  .price-slide {
+    width: 100%;
+    height: 66px;
+    border-radius: 0;
+    flex-basis: auto;
+    width: 100%;
+  }
+  .price-slide:nth-of-type(6) {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .price-slide:nth-of-type(2) {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
   .technic-slide {
     height: 160px;
@@ -927,6 +1043,27 @@
   .content__button-wrapper {
     margin: 12px 0 0 25px;
   }
+  .commercial {
+    margin-top: 0px;
+  }
+  .commercial__text {
+    margin: 0 2px;
+  }
+  .commercial__button {
+    width: 292px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+  }
+  .commercial__button-wrapper {
+    width: 326px;
+    height: 24px;
+    margin-left: 16px;
+  }
+  .commercial__button-wrapper::after {
+    top: 0px;
+    left: 0px;
+  }
 }
 @media (min-width: 1119px) {
   .body {
@@ -969,6 +1106,21 @@
   }
   .content__text {
     width: 530px;
+  }
+  .price-list {
+    height: 650px;
+    overflow: hidden;
+    min-width: 1119px;
+    max-width: 1120px;
+  }
+  .price-list__slide {
+    width: 100%;
+    height: 72px;
+  }
+  .price-list__header {
+    min-width: 1119px;
+    max-width: 1120px;
+    padding-left: 32px;
   }
   .technic-list {
     min-height: 280px;

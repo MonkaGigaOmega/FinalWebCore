@@ -2,15 +2,15 @@ let FirstSwiper = null;
 window.addEventListener('resize', () => {
   const repairSlider = document.querySelector('.repair-slider');
   if (window.innerWidth < 768 && repairSlider && !FirstSwiper) {
-    const paginationContainerFirst = document.querySelector('.repair-slider .swiper-pagination');
+    const paginationContainerFirst = document.querySelector('.repair-slider .repair-slider__pagination');
     if (!paginationContainerFirst) {
       const paginationFirst = document.createElement('div');
-      paginationFirst.classList.add('swiper-pagination');
+      paginationFirst.classList.add('repair-slider__pagination');
       repairSlider.appendChild(paginationFirst);
     }
     FirstSwiper = new Swiper(repairSlider, {
       pagination: {
-        el: '.repair-list-pagination',
+        el: '.repair-slider__pagination',
         clickable: true,
       },
       spaceBetween: 16,
@@ -29,7 +29,7 @@ window.addEventListener('resize', () => {
     FirstSwiper.destroy(true, true);
     FirstSwiper = null;
 
-    const paginationFirst = document.querySelector('.repair-slider .swiper-pagination');
+    const paginationFirst = document.querySelector('.repair-slider .repair-slider__pagination');
     if (paginationFirst) {
       paginationFirst.remove();
     }}});
@@ -107,15 +107,15 @@ window.addEventListener('resize', () => {
 window.addEventListener('DOMContentLoaded', () => {
   const repairSlider = document.querySelector('.repair-slider');
   if (window.innerWidth < 768 && repairSlider && !FirstSwiper) {
-    const paginationContainerFirst = document.querySelector('.repair-slider .swiper-pagination');
+    const paginationContainerFirst = document.querySelector('.repair-slider .repair-slider__pagination');
     if (!paginationContainerFirst) {
       const paginationFirst = document.createElement('div');
-      paginationFirst.classList.add('swiper-pagination');
+      paginationFirst.classList.add('repair-slider__pagination');
       repairSlider.appendChild(paginationFirst);
     }
     FirstSwiper = new Swiper(repairSlider, {
       pagination: {
-        el: '.swiper-pagination',
+        el: '.repair-slider__pagination',
         clickable: true,
       },
       spaceBetween: 16,
@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', () => {
     FirstSwiper.destroy(true, true);
     FirstSwiper = null;
 
-    const paginationFirst = document.querySelector('.repair-slider .swiper-pagination');
+    const paginationFirst = document.querySelector('.repair-slider .repair-slider__pagination');
     if (paginationFirst) {
       paginationFirst.remove();
     }}});
