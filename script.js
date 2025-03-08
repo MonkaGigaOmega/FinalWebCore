@@ -33,20 +33,20 @@ window.addEventListener('resize', () => {
     if (paginationFirst) {
       paginationFirst.remove();
     }}});
-/*
+
 let SecondSwiper = null;
 window.addEventListener('resize', () => {
-  const repairTechnicListSlider = document.querySelector('.repair-technic-list-slider');
+  const repairTechnicListSlider = document.querySelector('.technic-list-slider');
   if (window.innerWidth < 768 && repairTechnicListSlider && !SecondSwiper) {
-    const paginationContainerSecond = document.querySelector('.repair-technic-list-slider .technic-pagination');
+    const paginationContainerSecond = document.querySelector('.technic-list-slider .technic-list-slider__pagination');
     if (!paginationContainerSecond) {
       const paginationSecond = document.createElement('div');
-      paginationSecond.classList.add('technic-pagination');
+      paginationSecond.classList.add('technic-list-slider__pagination');
       repairTechnicListSlider.appendChild(paginationSecond);
     }
     SecondSwiper = new Swiper(repairTechnicListSlider, {
       pagination: {
-        el: '.technic-pagination',
+        el: '.technic-list-slider__pagination',
         clickable: true,
       },
       spaceBetween: 16,
@@ -62,13 +62,13 @@ window.addEventListener('resize', () => {
     SecondSwiper.destroy(true, true);
     SecondSwiper = null;
 
-    const paginationSecond = document.querySelector('.repair-technic-list-slider .technic-pagination');
+    const paginationSecond = document.querySelector('.technic-list-slider .technic-list-slider__pagination');
     if (paginationSecond) {
       paginationSecond.remove();
     }
   }
 });
-
+/*
 let ThirdSwiper = null;
 window.addEventListener('resize', () => {
   const repairTechnicListSlider = document.querySelector('.repair-price-list-slider');
@@ -139,19 +139,19 @@ window.addEventListener('DOMContentLoaded', () => {
     if (paginationFirst) {
       paginationFirst.remove();
     }}});
-/*
+
 window.addEventListener('DOMContentLoaded', () => {
-  const repairTechnicListSlider = document.querySelector('.repair-technic-list-slider');
+  const repairTechnicListSlider = document.querySelector('.technic-list-slider');
   if (window.innerWidth < 768 && repairTechnicListSlider && !SecondSwiper) {
-    const paginationContainerSecond = document.querySelector('.repair-technic-list-slider .technic-pagination');
+    const paginationContainerSecond = document.querySelector('.technic-list-slider .technic-list-slider__pagination');
     if (!paginationContainerSecond) {
       const paginationSecond = document.createElement('div');
-      paginationSecond.classList.add('technic-pagination');
+      paginationSecond.classList.add('technic-list-slider__pagination');
       repairTechnicListSlider.appendChild(paginationSecond);
     }
     SecondSwiper = new Swiper(repairTechnicListSlider, {
       pagination: {
-        el: '.technic-pagination',
+        el: '.technic-list-slider__pagination',
         clickable: true,
       },
       spaceBetween: 16,
@@ -167,13 +167,13 @@ window.addEventListener('DOMContentLoaded', () => {
     SecondSwiper.destroy(true, true);
     SecondSwiper = null;
 
-    const paginationSecond = document.querySelector('.repair-technic-list-slider .technic-pagination');
+    const paginationSecond = document.querySelector('.technic-list-slider .technic-list-slider__pagination');
     if (paginationSecond) {
       paginationSecond.remove();
     }
   }
 });
-
+/*
 window.addEventListener('DOMContentLoaded', () => {
   const repairTechnicListSlider = document.querySelector('.repair-price-list-slider');
   if (window.innerWidth < 768 && repairTechnicListSlider && !ThirdSwiper) {
@@ -232,10 +232,10 @@ buttonShow.addEventListener('click', function () {
 
   buttonShowWrapper.classList.toggle('repair-list__button-wrapper--flipped');
 });
-/*Кнопка 2 слайдера *//*
-const techSlides = document.querySelectorAll('.repair-technic-list-slide');
-const techButtonShow = document.querySelector('.repair-technic-list__button');
-const techButtonShowWrapper = document.querySelector('.repair-technic-list__button-wrapper');
+/*Кнопка 2 слайдера */
+const techSlides = document.querySelectorAll('.technic-list-slider__slide');
+const techButtonShow = document.querySelector('.technic-list__button');
+const techButtonShowWrapper = document.querySelector('.technic-list__button-wrapper');
 const techRepairList = document.querySelector('.technic-list');
 techButtonShow.addEventListener('click', function () {
   for (let i = 3; i < techSlides.length; i++) {
@@ -249,16 +249,16 @@ techButtonShow.addEventListener('click', function () {
   } else {
     techButtonShow.textContent = 'Показать все';
   }
-  techButtonShowWrapper.classList.toggle('repair-technic-list__button-wrapper--down');
+  techButtonShowWrapper.classList.toggle('technic-list__button-wrapper--down');
 
  techRepairList.classList.toggle('technic-list--expanded');
 
-  techButtonShowWrapper.classList.toggle('repair-technic-list__button-wrapper--flipped');
+  techButtonShowWrapper.classList.toggle('technic-list__button-wrapper--flipped');
 });
 
 
 
-*/
+
 /*Меню */
 document.addEventListener('DOMContentLoaded', function () {
   const openMenuButton = document.querySelector('.header__button-burger');

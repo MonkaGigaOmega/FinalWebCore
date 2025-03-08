@@ -64,16 +64,6 @@ body {
   background-image: url(./icons/pink-str.svg);
   
 }
-.repair-technic-list-slide{
-    height:160px;
-    background-color: #FFFFFF;
-    border:solid 1px #EAEAEA ;
-    border-radius: 6px;
-    box-sizing: border-box;
-    display:flex;
-    justify-content: space-between;
-
-}
 .price-list__slide-button{
     position:relative;
     left:140px;
@@ -106,9 +96,6 @@ background-repeat: no-repeat;
 background-position: center;
 z-index:1;
 }
-.technic-slide{
-height:160px;
-}
 .repair-price-list__slide{
     height:200px;
     background-color: #FFFFFF;
@@ -125,16 +112,6 @@ height:160px;
     margin:4px 0px;
     color:#7E7E82;
 }
-.technic-pagination{
-    position: absolute;
-    text-align: center;
-}
-.repair-technic-list-slider .technic-pagination{
-    top:280px;
-    min-width: 320px;
-    max-width: 767px;
-    height:20px; 
-}
 .repair-price-list-slider .price-pagination{
     top:320px;
     min-width: 320px;
@@ -143,59 +120,13 @@ height:160px;
     position: absolute;
     text-align: center;
 }
-.technic-list{
-    margin-bottom:92px;
-}
-.technic-pagination .swiper-pagination-bullet{
+/*.technic-pagination .swiper-pagination-bullet{
     width:12px;
     height:12px;
     line-height: 12px;
     font-size: 14px;
 background-color: #B5B6BC;  
-}
-.repair-technic-list-slider{
-    padding:0 16px;
-    overflow: hidden;
-}
-.repair-technic-list__button-wrapper{
-    justify-content: space-between;
-    width:134px;
-    height: 24px;
-    position: absolute;
-    left:16px;
-    top:256px;
-    display:none;
-    transition: top 1s ease;
-}
-.repair-technic-list__button{
-    color:#1B1C21;
-    font-weight: medium;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    border: none;
-    width:120px;
-    margin-left:8px;
-    background-color:#F9F9F9;
-    padding:0;
-}
-.technic-slide::after{
-    content:"";
-    margin:auto 16px 16px auto;
-    width:40px;
-    height:40px;
-    background-image: url(./icons/go.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 5;
-}
-.repair-technic-list__button:hover{
-    background-color: #B5B6BC;
-}
-.technic-list--expanded{
-    height:460px;
-    transition: height 0.7s ease;
-}
+}*/
 .footer{
     color:#7E7E82;
     text-align: center;
@@ -304,58 +235,9 @@ position: relative;
 .footer__text{
     width:215px;
 }
-.technic-slide{
-        height:160px;
-    }
-.repair-technic-list-slider__wrapper{
-    display:flex;
-    flex-wrap: wrap;
-    gap:16px 24px;
-    overflow: visible;
-    max-height:266px;
-}
-.technic-list{
-    overflow: hidden;
-    min-height:288px;
-    min-width: 768px;
-  max-width: 1119px;
-  padding-bottom:16px;
-  margin:0;
-}
-.repair-technic-list__button-wrapper{
-    display:flex ;
-    margin-left:24px;
-    }
-.repair-technic-list__button-wrapper::after{
-        content: "";
-        position: relative;
-        left:-130px;
-        width:24px;
-        height:24px;
-    background: url(./icons/str.svg) no-repeat center;
-        z-index: 1;
-    }
-.repair-technic-list__button-wrapper--flipped::after{
-    transform: rotate(180deg);
-}
-.technic-slide-hidden{
-    display:none;
-}
-.technic-slide-show{
-    display: flex;
-}
-.repair-technic-list__button-wrapper--down{
-top:430px;
-transition: top 0.7s ease;
-}
 .price-list{
     min-height:598px;
     margin:0;
-}
-.repair-technic-list-slider{
-    display:flex;
-    flex-wrap: wrap;
-    overflow: visible;
 }
 .price-slide{
  width:100%;
