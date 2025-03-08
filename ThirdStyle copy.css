@@ -1,30 +1,3 @@
-/* Нормализация стилей */
-body {
-    margin:0;
-}
-/*Нормализация стилей */
-
-
-@font-face {
-    font-family:'TT Lakes';
-    src: url('./fonts/TTLakes-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: bold;
-}
-@font-face {
-    font-family:'TT Lakes';
-    src: url('./fonts/TTLakes-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family:'TT Lakes';
-    src: url('./fonts/TTLakes-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: medium;
-}
-
-
 .price-list{
     margin-bottom: 330px;
 }
@@ -313,27 +286,8 @@ margin-left: 16px;
 .repair-price-list__slide{
     width:100%;
 }
-.technic-list{
-    min-height:280px;
-}
-.repair-technic-list__button-wrapper{
-    top:250px;
-}
-.repair-technic-list__button-wrapper--down{
-    top:425px;
-    transition: top 0.7s ease;
-}
-.technic-list--expanded{
-    height:450px;
-    transition: height 0.7s ease;
-}
 .price-list{
     height:650px;
 }
-.repair-technic-list-slide:nth-child(4){
-display: flex;
-}
-.repair-technic-list-slide{
-    height:160px;}
 }
 }

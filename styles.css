@@ -877,6 +877,27 @@
   .content__text {
     width: 530px;
   }
+  .technic-list {
+    min-height: 280px;
+  }
+  .technic-list-slider__slide {
+    width: calc(25% - 24px);
+    height: 160px;
+  }
+  .technic-list-slider__slide:nth-child(4) {
+    display: flex;
+  }
+  .technic-list--expanded {
+    height: 450px;
+    transition: height 0.7s ease;
+  }
+  .technic-list__button-wrapper {
+    top: 250px;
+  }
+  .technic-list__button-wrapper--down {
+    top: 425px;
+    transition: top 0.7s ease;
+  }
   .repair-list {
     margin: auto;
     overflow: hidden;

@@ -904,6 +904,31 @@ background-color: #B5B6BC;
             width:530px;
         }
     }
+    .technic{
+        &-list{
+        min-height:280px;
+        &-slider{
+            &__slide{
+                width: calc(25% - 24px);
+                height:160px;
+                &:nth-child(4){
+                    display: flex;
+                    }
+            }
+        }
+        &--expanded{
+            height:450px;
+            transition: height 0.7s ease;
+        }
+        &__button-wrapper{
+            top:250px;
+            &--down{
+                top:425px;
+                transition: top 0.7s ease;
+            }
+        }
+    }
+}
     .repair{
         &-list{
             margin:auto;
