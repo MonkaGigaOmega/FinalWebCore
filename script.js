@@ -10,7 +10,7 @@ window.addEventListener('resize', () => {
     }
     FirstSwiper = new Swiper(repairSlider, {
       pagination: {
-        el: '.swiper-pagination',
+        el: '.repair-list-pagination',
         clickable: true,
       },
       spaceBetween: 16,
@@ -68,20 +68,20 @@ window.addEventListener('resize', () => {
     }
   }
 });
-/*
+
 let ThirdSwiper = null;
 window.addEventListener('resize', () => {
-  const repairTechnicListSlider = document.querySelector('.repair-price-list-slider');
+  const repairTechnicListSlider = document.querySelector('.price-list-slider');
   if (window.innerWidth < 768 && repairTechnicListSlider && !ThirdSwiper) {
-    const paginationContainerSecond = document.querySelector('.repair-price-list-slider .price-pagination');
+    const paginationContainerSecond = document.querySelector('.price-list-slider .price-list-slider__pagination');
     if (!paginationContainerSecond) {
       const paginationSecond = document.createElement('div');
-      paginationSecond.classList.add('price-pagination');
+      paginationSecond.classList.add('price-list-slider__pagination');
       repairTechnicListSlider.appendChild(paginationSecond);
     }
     ThirdSwiper = new Swiper(repairTechnicListSlider, {
       pagination: {
-        el: '.price-pagination',
+        el: '.price-list-slider__pagination',
         clickable: true,
       },
       spaceBetween: 16,
@@ -97,14 +97,13 @@ window.addEventListener('resize', () => {
     ThirdSwiper.destroy(true, true);
     ThirdSwiper = null;
 
-    const paginationSecond = document.querySelector('.repair-price-list-slider .price-pagination');
+    const paginationSecond = document.querySelector('.price-list-slider .price-list-slider__pagination');
     if (paginationSecond) {
       paginationSecond.remove();
     }
   }
 });
 
-*/
 window.addEventListener('DOMContentLoaded', () => {
   const repairSlider = document.querySelector('.repair-slider');
   if (window.innerWidth < 768 && repairSlider && !FirstSwiper) {
@@ -173,19 +172,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
-/*
+
 window.addEventListener('DOMContentLoaded', () => {
-  const repairTechnicListSlider = document.querySelector('.repair-price-list-slider');
+  const repairTechnicListSlider = document.querySelector('.price-list-slider');
   if (window.innerWidth < 768 && repairTechnicListSlider && !ThirdSwiper) {
-    const paginationContainerSecond = document.querySelector('.repair-price-list-slider .price-pagination');
+    const paginationContainerSecond = document.querySelector('.price-list-slider .price-list-slider__pagination');
     if (!paginationContainerSecond) {
       const paginationSecond = document.createElement('div');
-      paginationSecond.classList.add('price-pagination');
+      paginationSecond.classList.add('price-list-slider__pagination');
       repairTechnicListSlider.appendChild(paginationSecond);
     }
     ThirdSwiper = new Swiper(repairTechnicListSlider, {
       pagination: {
-        el: '.price-pagination',
+        el: '.price-list-slider__pagination',
         clickable: true,
       },
       spaceBetween: 16,
@@ -201,13 +200,13 @@ window.addEventListener('DOMContentLoaded', () => {
     ThirdSwiper.destroy(true, true);
     ThirdSwiper = null;
 
-    const paginationSecond = document.querySelector('.repair-price-list-slider .price-pagination');
+    const paginationSecond = document.querySelector('.price-list-slider .price-list-slider__pagination');
     if (paginationSecond) {
       paginationSecond.remove();
     }
   }
 });
-*/
+
 /*Кнопка превого слайдера */
 const slides = document.querySelectorAll('.repair-slider__slide');
 const buttonShow = document.querySelector('.repair-list__button');

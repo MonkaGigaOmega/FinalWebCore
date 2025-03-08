@@ -415,6 +415,102 @@ transition: left 1s ease; /* Добавляем плавный переход */
     font-size: 14px;
 background-color: #B5B6BC;  
 }
+.price{
+    &-list{
+        min-width: 320px;
+        height: 234px;
+        max-width: 767px;
+        position: relative;
+        background-color: #F9F9F9;
+        margin-bottom: 330px;
+        &__title{
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    padding: 16px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    margin-top: 0;
+        }
+        &-slider{
+            margin-bottom:60px;
+            padding: 0 16px;
+            overflow: hidden;
+            &__pagination{
+                top:320px;
+                min-width: 320px;
+                max-width: 767px;
+                height:20px;
+                position: absolute;
+                text-align: center;
+            }
+        }
+        &-header{
+            &-content{
+            display: none;
+        }
+    }
+        &__header{
+    min-width: 320px;
+    max-width: 767px;
+    height: 80px;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+    font-style: normal;
+    font-family: 'TT Lakes';
+    margin-top: 0;
+    border-top: #D9FFF5 solid 1px;
+        }
+        &-container{
+            margin-bottom: 60px;
+        }
+        &__slide{
+            height:200px;
+            background-color: #FFFFFF;
+            border:solid 1px #EAEAEA ;
+            border-radius: 6px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+        &-title{
+            margin:4px 0px;
+            color:#7E7E82;
+            }
+        &-button{
+            position:relative;
+            left:140px;
+            top:-40px;
+            width:119px;
+            height:32px;
+            border:none;
+            border-radius:20px;
+            background-color: #FF3E79;
+            color:white;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: left;
+            box-sizing: border-box;
+            padding-left:12px;
+            &-wrapper{
+                display: flex;
+                align-items: center;
+                position: relative;
+                &::after{
+                    content:"";
+                    position: relative;
+                    left:-25px;
+                    width:20px;
+                    height:20px;
+                    background-image:url(./icons/str-right.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index:1;
+                    }
+                }
+        }
+    }
+    }
+}
 .technic{
     &-slide{
         height:160px;
