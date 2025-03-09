@@ -1,18 +1,18 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("../fonts/TTLakes-Bold.woff") format("woff");
+  src: url("./fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("../fonts/TTLakes-Regular.woff") format("woff");
+  src: url("./fonts/TTLakes-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("../fonts/TTLakes-Medium.woff") format("woff");
+  src: url("./fonts/TTLakes-Medium.woff") format("woff");
   font-weight: 500;
   font-style: medium;
 }
@@ -69,13 +69,13 @@
       background-color: #142ffa;
     }
     &-request {
-      background-image: url(../icons/pupa.svg);
+      background-image: url(./icons/pupa.svg);
       z-index: 1;
       background-repeat: no-repeat;
       background-position: center;
     }
     &-status {
-      background-image: url(../icons/lupa.png);
+      background-image: url(./icons/lupa.png);
       z-index: 1;
       background-repeat: no-repeat;
       background-position: center;
@@ -128,17 +128,17 @@
       background-color: #142ffa;
     }
     &-burger {
-      background-image: url(../icons/burger-button.svg);
+      background-image: url(./icons/burger-button.svg);
       background-repeat: no-repeat;
       background-position: center;
     }
     &-request {
-      background-image: url(../icons/pupa.svg);
+      background-image: url(./icons/pupa.svg);
       background-repeat: no-repeat;
       background-position: center;
     }
     &-status {
-      background-image: url(../icons/lupa.png);
+      background-image: url(./icons/lupa.png);
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -221,7 +221,7 @@
       margin: 12px 0 16px 16px;
       &::before {
         content: "";
-        background-image: url(../icons/str.svg);
+        background-image: url(./icons/str.svg);
         width: 24px;
         height: 24px;
         position: relative;
@@ -248,17 +248,17 @@
 }
 .extra {
   &-tele {
-    background-image: url(../icons/tele.svg);
+    background-image: url(./icons/tele.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
   &-message {
-    background-image: url(../icons/message.svg);
+    background-image: url(./icons/message.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
   &-human {
-    background-image: url(../icons/human.svg);
+    background-image: url(./icons/human.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -350,19 +350,19 @@
       background-color: #142ffa;
     }
     &-tele {
-      background-image: url(../icons/tele.svg);
+      background-image: url(./icons/tele.svg);
       background-repeat: no-repeat;
       background-position: center;
       z-index: 1;
     }
     &-message {
-      background-image: url(../icons/message.svg);
+      background-image: url(./icons/message.svg);
       background-repeat: no-repeat;
       background-position: center;
       z-index: 1;
     }
     &-contacts {
-      background-image: url(../icons/human.svg);
+      background-image: url(./icons/human.svg);
       background-repeat: no-repeat;
       background-position: center;
       z-index: 1;
@@ -415,13 +415,13 @@
       }
       &-exit-burger {
         background:
-          url(../icons/exit-burger.svg) no-repeat center,
+          url(./icons/exit-burger.svg) no-repeat center,
           #ff3e79;
         z-index: 2;
       }
       &-search {
         background:
-          url(../icons/lupa2.svg) no-repeat center,
+          url(./icons/lupa2.svg) no-repeat center,
           #ff3e79;
         z-index: 2;
       }
@@ -558,7 +558,7 @@
             top: -40px;
             width: 20px;
             height: 20px;
-            background-image: url(../icons/str-right.svg);
+            background-image: url(./icons/str-right.svg);
             background-repeat: no-repeat;
             background-position: center;
             z-index: 1;
@@ -576,7 +576,7 @@
       margin: auto 16px 16px auto;
       width: 40px;
       height: 40px;
-      background-image: url(../icons/go.svg);
+      background-image: url(./icons/go.svg);
       background-repeat: no-repeat;
       background-position: center;
       z-index: 5;
@@ -674,7 +674,7 @@
       margin: 16px;
       width: 40px;
       height: 40px;
-      background-image: url(../icons/go.svg);
+      background-image: url(./icons/go.svg);
       background-repeat: no-repeat;
       background-position: center;
       z-index: 5;
@@ -812,7 +812,7 @@
         top: -7px;
         height: 24px;
         background-position: center;
-        background-image: url(../icons/pink-str.svg);
+        background-image: url(./icons/pink-str.svg);
       }
     }
   }
@@ -841,7 +841,7 @@
         height: 40px;
         background-color: #ff3e79;
         border-radius: 20px;
-        background-image: url(../icons/exit-burger.svg);
+        background-image: url(./icons/exit-burger.svg);
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
@@ -891,7 +891,7 @@
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
-            background-image: url(../icons/str-right.svg);
+            background-image: url(./icons/str-right.svg);
           }
         }
       }
@@ -958,7 +958,7 @@
         height: 40px;
         background-color: #ff3e79;
         border-radius: 20px;
-        background-image: url(../icons/exit-burger.svg);
+        background-image: url(./icons/exit-burger.svg);
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
@@ -1034,7 +1034,7 @@
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
-            background-image: url(../icons/str-right.svg);
+            background-image: url(./icons/str-right.svg);
           }
         }
       }
@@ -1245,7 +1245,7 @@
             left: -130px;
             width: 24px;
             height: 24px;
-            background: url(../icons/str.svg) no-repeat center;
+            background: url(./icons/str.svg) no-repeat center;
             z-index: 1;
           }
         }
@@ -1342,7 +1342,7 @@
             left: -130px;
             width: 24px;
             height: 24px;
-            background: url(../icons/str.svg) no-repeat center;
+            background: url(./icons/str.svg) no-repeat center;
             z-index: 1;
           }
         }
