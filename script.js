@@ -255,9 +255,6 @@ techButtonShow.addEventListener('click', function () {
   techButtonShowWrapper.classList.toggle('technic-list__button-wrapper--flipped');
 });
 
-
-
-
 /*Меню */
 document.addEventListener('DOMContentLoaded', function () {
   const openMenuButton = document.querySelector('.header__button-burger');
@@ -266,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   openMenuButton.addEventListener('click', function () {
       // Показываем меню и запускаем анимацию выезда
-      menu.style.display = 'block';
+     menu.classList.add('block');
       setTimeout(() => {
           menu.classList.add('menu__active');
       }, 0);
@@ -276,7 +273,6 @@ document.addEventListener('DOMContentLoaded', function () {
       // Убираем класс active и скрываем меню после анимации
       menu.classList.remove('menu__active');
       setTimeout(() => {
-          menu.style.display = 'none';
       }, 1000); // Время должно совпадать с длительностью transition в CSS
   });
 });
@@ -284,6 +280,10 @@ document.addEventListener('DOMContentLoaded', function () {
 const closeMenuButton = document.querySelector('.menu__header__button-exit-burger');
 const openMenuButton = document.querySelector('.header__button-burger');
 const bodyBlur = document.querySelector('.body-blur');
+const feedback = document.querySelector('.feedback-menu');
+const orderCall = document.querySelector('.order-call');
+
+
 openMenuButton.addEventListener('click', function () {
   bodyBlur.classList.add('menu-open');
 });
@@ -293,5 +293,85 @@ closeMenuButton.addEventListener('click', function () {
 bodyBlur.addEventListener('click', function(){
   const menu = document.querySelector('.menu');
   bodyBlur.classList.remove('menu-open');
+  bodyBlur.classList.remove('menu-open-left');
   menu.classList.remove('menu__active');
+  feedback.classList.remove('visible');
+  orderCall.classList.remove('visible')
+
 });
+/*Меню  конец */
+
+  /*Меню фидбек*/
+const buttonMessage = document.querySelector('.menu__button-message');
+const buttonMessageClose = document.querySelector('.feedback-menu__button-exit');
+const headerButtonMessage = document.querySelector('.extra-message');
+feedback.classList.add('flex');
+buttonMessage.addEventListener('click', function () {
+    setTimeout(() => {
+    feedback.classList.add('visible');})
+  }, 0);
+  headerButtonMessage.addEventListener('click', function () {
+    setTimeout(() => {
+      bodyBlur.classList.add('menu-open-left');
+    feedback.classList.add('visible');})
+  }, 0);
+
+buttonMessageClose.addEventListener('click', function () {
+  // Убираем класс active и скрываем меню после анимации
+  bodyBlur.classList.remove('menu-open-left');
+  feedback.classList.remove('visible');
+  setTimeout(() => {
+  }, 1000); // Время должно совпадать с длительностью transition в CSS
+});
+  
+    /*Меню фидбек конец */
+
+/* Это меню звонка*/ 
+document.addEventListener('DOMContentLoaded', function () {
+
+  const button = document.querySelector('.menu__button-tele');
+  const orderCall = document.querySelector('.order-call');
+  const closeOrderButton = document.querySelector('.order-call__button-exit');
+  const headerButton = document.querySelector('.extra-tele');
+  orderCall.classList.add('flex');
+  button.addEventListener('click', function () {
+    // Показываем меню и запускаем анимацию выезда
+    setTimeout(() => {
+      orderCall.classList.add('visible');
+    }, 0);
+});
+headerButton.addEventListener('click', function () {
+  // Показываем меню и запускаем анимацию выезда
+  setTimeout(() => {
+    bodyBlur.classList.add('menu-open-left');
+    orderCall.classList.add('visible');
+  }, 0);
+});
+
+closeOrderButton.addEventListener('click', function () {
+  // Убираем класс active и скрываем меню после анимации
+  orderCall.classList.remove('visible');
+  bodyBlur.classList.remove('menu-open-left');
+  setTimeout(() => {
+  }, 1000); // Время должно совпадать с длительностью transition в CSS
+});
+});
+/* сверху кнопки снизу взааимодействие с блюром*/
+    // Открытие элемента и активация блюра при нажатии на кнопку
+    const button = document.querySelector('.menu__button-tele');
+    button.addEventListener('click', function () {
+      orderCall.classList.add('visible');
+      bodyBlur.classList.add('menu-open');
+    });
+    const closeOrderButton = document.querySelector('.order-call__button-exit');
+  closeOrderButton.addEventListener('click', function () {
+    orderCall.classList.remove('visible');
+  });
+/* Это конец меню звонка*/ 
+
+const contButton = document.querySelector('.content__button');
+const parargaph = document.querySelector('.content__paragraph-more');
+contButton.addEventListener('click', function(){
+  parargaph.classList.toggle('none');
+  parargaph.classList.toggle('block');
+})

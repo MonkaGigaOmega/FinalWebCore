@@ -60,8 +60,13 @@
             height:40px;
             border-radius:50%;
             border: none;
-            &:focus{
-                background-color:#ff9bb9;
+            &:hover {
+                background-color:#b449ad;
+                transition: background-color 1s; 
+            }
+            &:active{
+                transition: background-color 0.3s; 
+                background-color:#142ffa;
             }
             &-request {
                 background-image: url(./icons/pupa.svg);
@@ -115,12 +120,12 @@ padding:0 16px;
         height:40px;
         border-radius:50%;
         border: none;
+        transition: background-color 0.3s; 
         &:hover {
             background-color:#b449ad;
-            transition: background-color 1s; 
         }
-        &:focus {
-            background-color:#ff9bb9;
+        &:active{
+            background-color:#142ffa;
         }
         &-burger {
             background-image: url(./icons/burger-button.svg);
@@ -165,7 +170,7 @@ padding:0 16px;
         min-width:143px;
         gap:5px;
         text-align: center;
-        flex-shrink: 0;
+        flex-shrink: 0; 
     }
     &__input[type="radio"]:checked + label{
         background-color: #FFFFFF;
@@ -198,6 +203,9 @@ padding:0 16px;
         padding-left:0px;
         &:hover{
             border-bottom: 2px solid #41F6D7;
+        }
+        &:active{
+            color:#41F6D7;
         }
         &::before {
             content: "";  
@@ -258,12 +266,14 @@ padding:0 16px;
 }
 .menu {
     min-height:676px;
-    width:320px;
+    min-width:320px;
+    max-width:360px;
+    width:100%;
     height:100vh;
     font-style: medium;
     font-weight: 500;
     box-shadow:10px 0 50px -10px rgb(159, 174, 189);
-    background-color: #F9F9F9;
+    background-color: #ffffff;
     position: fixed;
     top: 0; 
     left: 0;
@@ -273,6 +283,9 @@ display:none;
 transition: left 1s ease; /* Добавляем плавный переход */
 &-open{
     display:block;/*было в боди блюр*/
+    &-left{
+        display:block;
+    }
 }
 &__list {
     margin-top:46px;
@@ -325,15 +338,18 @@ transition: left 1s ease; /* Добавляем плавный переход */
     margin-bottom:16px;
 }
     &__button {
-        &:hover{
-            background-color:#b449ad;
-            transition: background-color 1s; 
-        }
-        background-color:#FF3E79;
         width:40px;
         height:40px;
         border-radius:50%;
         border: none;
+        transition: background-color 0.3s; 
+        background-color: #FF3E79;
+        &:hover{
+            background-color:#b449ad;
+        }
+        &:active{
+            background-color:#142ffa;
+        }
         &-tele {
             background-image: url(./icons/tele.svg);
             background-repeat: no-repeat;
@@ -392,6 +408,13 @@ transition: left 1s ease; /* Добавляем плавный переход */
             height:40px;
             border-radius:50%;
             border: none;
+            transition: background-color 0.3s; 
+            &:hover {
+                background-color:#b449ad;
+            }
+            &:active{ 
+                background-color:#142ffa;
+            }
             &-exit-burger {
             background: url(./icons/exit-burger.svg) no-repeat center,#FF3E79 ;
             z-index: 2;}
@@ -425,7 +448,7 @@ transition: left 1s ease; /* Добавляем плавный переход */
 .swiper-pagination{
     position: absolute;
     text-align: center;
-    transition: .3s opacity;
+    transition: 0.3s opacity;
     transform: translate3d(0, 0, 0);
     z-index: 10;
     &-bullet{
@@ -493,6 +516,9 @@ background-color: #B5B6BC;
             box-sizing: border-box;
             display:flex;
             justify-content: space-between;
+            &-content{
+                padding-left:12px ;
+            }
         &-title{
             margin:4px 0px;
             color:#7E7E82;
@@ -512,6 +538,14 @@ background-color: #B5B6BC;
             text-align: left;
             box-sizing: border-box;
             padding-left:12px;
+            transition: background-color 0.3s; 
+            &:hover {
+                background-color:#b449ad;
+            }
+            &:active{
+                transition: background-color 0.3s; 
+                background-color:#142ffa;
+            }
             &-wrapper{
                 display: flex;
                 align-items: center;
@@ -555,6 +589,15 @@ background-color: #B5B6BC;
         max-width: 767px;
         position: relative;
         background-color: #F9F9F9;
+        &__title{
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            font-size: 16px;
+            padding: 16px;
+            text-transform: uppercase;
+            color: #7E7E82;
+            margin-top: 0;
+        }
         &__button{
             color:#1B1C21;
             font-weight: medium;
@@ -567,7 +610,10 @@ background-color: #B5B6BC;
             background-color:#F9F9F9;
             padding:0;
             &:hover{
-                background-color: #B5B6BC;
+                background-color: #d6d6d7;
+            }
+            &:active{
+                background-color: #e2fff3;
             }
             &-wrapper{
                 justify-content: space-between;
@@ -711,7 +757,10 @@ background-color: #B5B6BC;
             background-color:#F9F9F9;
             padding:0;
             &:hover{
-                background-color: #B5B6BC;
+                background-color: #d6d6d7;
+            }
+            &:active{
+                background-color: #e2fff3;
             }
             &-wrapper{
                 justify-content: space-between;
@@ -746,6 +795,13 @@ background-color: #B5B6BC;
         line-height: 24px;
         border:none;
         padding:none;
+        transition: color 0.1s; 
+        &:hover {
+            color:#b449ad;
+        }
+        &:active{
+            color:#142ffa;
+        }
         &-wrapper{
             display: flex;
             align-items: center;
@@ -775,16 +831,13 @@ background-color: #B5B6BC;
     position: fixed;
     top: 0; 
     z-index: 101;
-right:-320px;/*При нажатии на кнопку сделаю 0 и будет ок*/
+right:-380px;/*При нажатии на кнопку сделаю 0 и будет ок*/
 display:none;
 flex-direction: column;
-transition: left 1s ease;
+transition: right 1s ease;
 border-left: 1px solid #D9FFF5;
-&__title{
-    display: flex;
-    margin-left:12px;
-    &::after{
-        content: "";
+&__button{
+    &-exit{
         width:40px;
         height:40px;
         background-color: #FF3E79;
@@ -793,8 +846,21 @@ border-left: 1px solid #D9FFF5;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
-        left:-265px;
+        left: -60px;
+        top: -55px;
+        border: none;
+        transition: background-color 0.3s; 
+        &:hover {
+            background-color:#b449ad;
+        }
+        &:active{
+            background-color:#142ffa;
+        }
     }
+}
+&__title{
+    display: flex;
+    margin-left:12px;
 }
 &__submit{
 &-button{
@@ -806,6 +872,13 @@ border-left: 1px solid #D9FFF5;
     color:white;
     text-align: left;
     padding-left: 20px;
+    transition: background-color 1s; 
+    &:hover {
+        background-color:#b449ad;
+    }
+    &:active{
+        background-color:#142ffa;
+    }
     &-wrapper{
         display: flex;
         position: relative;
@@ -844,10 +917,23 @@ border-left: 1px solid #D9FFF5;
         font-size: 14px;
         &-important{
             color:#FF3E79;
+            transition: background-color 1s; 
+            &:hover {
+                color:#b449ad;
+            }
+            &:active{
+                color:#142ffa;
+            }
         }
     }
     }
 }
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
 }
 .order{
 &-call{
@@ -862,11 +948,34 @@ border-left: 1px solid #D9FFF5;
     position: fixed;
     top: 0; 
     z-index: 101;
-right:-320px;/*При нажатии на кнопку сделаю 0 и будет ок*/
+right:-380px;/*При нажатии на кнопку сделаю 0 и будет ок*/
 display:none;
 flex-direction: column;
-transition: left 1s ease;
+transition: right 1s ease;
 border-left: 1px solid #D9FFF5;
+&__button{
+    &-exit{
+        width:40px;
+        height:40px;
+        background-color: #FF3E79;
+        border-radius: 20px;
+        background-image: url(./icons/exit-burger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        left: -60px;
+        top: -55px;
+        border: none;
+        transition: background-color 0.3s; 
+        &:hover {
+            background-color:#b449ad;
+        }
+        &:active{
+            background-color:#142ffa;
+        }
+        
+    }
+}
 &__input{
     width:288px;
     height:48px;
@@ -887,6 +996,13 @@ border-left: 1px solid #D9FFF5;
     font-size: 14px;
     &-important{
         color:#FF3E79;
+        transition: background-color 1s; 
+        &:hover {
+            color:#b449ad;
+        }
+        &:active{
+            color:#142ffa;
+        }
     }
 }
 }
@@ -900,6 +1016,13 @@ border-left: 1px solid #D9FFF5;
         color:white;
         text-align: left;
         padding-left: 20px;
+        transition: background-color 1s; 
+        &:hover {
+            background-color:#b449ad;
+        }
+        &:active{
+            background-color:#142ffa;
+        }
         &-wrapper{
             display: flex;
             position: relative;
@@ -922,21 +1045,18 @@ border-left: 1px solid #D9FFF5;
     display: flex;
     margin-left:12px;
     color:#1B1C21;
-    &::after{
-        content: "";
-        width:40px;
-        height:40px;
-        background-color: #FF3E79;
-        border-radius: 20px;
-        background-image: url(./icons/exit-burger.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        position: relative;
-        left:-265px;
     }
 }
 }
-}
+.visible {
+    right: 0; /*это висибл для ордер колл*/
+  }
+  .flex{
+    display: flex;
+  }
+  .block{
+    display: block;
+  }
 .message{
 &-input{
     height:118px;
@@ -952,6 +1072,9 @@ border-left: 1px solid #D9FFF5;
     padding-bottom:25px;
 }
 @media (min-width:768px)  {
+    .menu{
+        width: 320px;
+    }
     .footer{
     &__text{
         width:215px;
@@ -1243,9 +1366,11 @@ border-left: 1px solid #D9FFF5;
     .header{
         gap:16px;
         justify-content: space-between;
-        &__button-wrapper{
+        &__button{
+        &-wrapper{
             margin-left:4px;
         }
+    }
         &__extra{
             display:flex;
         }
@@ -1449,4 +1574,80 @@ border-left: 1px solid #D9FFF5;
     }
     }
     }
-
+    @media (min-width:1440px) {
+        .body{
+            display: flex;
+            margin: 0;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            max-width: 1920px;
+            &-part{
+                margin-left: auto;
+                margin-right: auto;
+                width: 1120px;
+            }
+        }
+        .menu{
+            position: static;
+            top:0;
+            left:0;
+box-shadow: none;
+display: block;
+min-height:1800px;
+            &-open{
+                display: none;
+            }
+            &__header{
+                &__button{
+                    &-exit{
+                        &-burger{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .main{
+            margin-left: auto;
+                margin-right: auto;
+            max-width:1600px;
+            &__title{
+                &-wrappper{
+                margin-left: auto;
+                margin-right: auto;
+                width: 1120px;
+                }
+            }
+        }
+        .slidemenu{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1120px;
+        }
+        .content{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1120px;
+        }
+        .repair{
+            &-list{
+                margin-left: auto;
+                margin-right: auto;
+                width: 1120px;
+            }
+        }
+        .technic{
+            &-list{
+                margin-left: auto;
+                margin-right: auto;
+                width: 1120px;
+            }
+        }
+        .price{
+            &-list{
+                margin-left: auto;
+                margin-right: auto;
+                width: 1120px;
+            }
+        }
+    }

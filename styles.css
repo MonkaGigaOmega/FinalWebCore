@@ -64,8 +64,13 @@
   border-radius: 50%;
   border: none;
 }
-.main__input:focus {
-  background-color: #ff9bb9;
+.main__input:hover {
+  background-color: #b449ad;
+  transition: background-color 1s;
+}
+.main__input:active {
+  transition: background-color 0.3s;
+  background-color: #142ffa;
 }
 .main__input-request {
   background-image: url(./icons/pupa.svg);
@@ -119,13 +124,13 @@
   height: 40px;
   border-radius: 50%;
   border: none;
+  transition: background-color 0.3s;
 }
 .header__button:hover {
   background-color: #b449ad;
-  transition: background-color 1s;
 }
-.header__button:focus {
-  background-color: #ff9bb9;
+.header__button:active {
+  background-color: #142ffa;
 }
 .header__button-burger {
   background-image: url(./icons/burger-button.svg);
@@ -203,6 +208,9 @@
 .content__button:hover {
   border-bottom: 2px solid #41F6D7;
 }
+.content__button:active {
+  color: #41F6D7;
+}
 .content__button::before {
   content: "";
   width: 10px;
@@ -260,12 +268,14 @@
 
 .menu {
   min-height: 676px;
-  width: 320px;
+  min-width: 320px;
+  max-width: 360px;
+  width: 100%;
   height: 100vh;
   font-style: medium;
   font-weight: 500;
   box-shadow: 10px 0 50px -10px rgb(159, 174, 189);
-  background-color: #F9F9F9;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -276,6 +286,9 @@
 }
 .menu-open {
   display: block; /*было в боди блюр*/
+}
+.menu-open-left {
+  display: block;
 }
 .menu__list {
   margin-top: 46px;
@@ -328,15 +341,18 @@
   margin-bottom: 16px;
 }
 .menu__button {
-  background-color: #FF3E79;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
+  transition: background-color 0.3s;
+  background-color: #FF3E79;
 }
 .menu__button:hover {
   background-color: #b449ad;
-  transition: background-color 1s;
+}
+.menu__button:active {
+  background-color: #142ffa;
 }
 .menu__button-tele {
   background-image: url(./icons/tele.svg);
@@ -395,6 +411,13 @@
   height: 40px;
   border-radius: 50%;
   border: none;
+  transition: background-color 0.3s;
+}
+.menu__header__button:hover {
+  background-color: #b449ad;
+}
+.menu__header__button:active {
+  background-color: #142ffa;
 }
 .menu__header__button-exit-burger {
   background: url(./icons/exit-burger.svg) no-repeat center, #FF3E79;
@@ -495,6 +518,9 @@
   display: flex;
   justify-content: space-between;
 }
+.price-list__slide-content {
+  padding-left: 12px;
+}
 .price-list__slide-title {
   margin: 4px 0px;
   color: #7E7E82;
@@ -514,6 +540,14 @@
   text-align: left;
   box-sizing: border-box;
   padding-left: 12px;
+  transition: background-color 0.3s;
+}
+.price-list__slide-button:hover {
+  background-color: #b449ad;
+}
+.price-list__slide-button:active {
+  transition: background-color 0.3s;
+  background-color: #142ffa;
 }
 .price-list__slide-button-wrapper {
   display: flex;
@@ -555,6 +589,15 @@
   position: relative;
   background-color: #F9F9F9;
 }
+.technic-list__title {
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  padding: 16px;
+  text-transform: uppercase;
+  color: #7E7E82;
+  margin-top: 0;
+}
 .technic-list__button {
   color: #1B1C21;
   font-weight: medium;
@@ -568,7 +611,10 @@
   padding: 0;
 }
 .technic-list__button:hover {
-  background-color: #B5B6BC;
+  background-color: #d6d6d7;
+}
+.technic-list__button:active {
+  background-color: #e2fff3;
 }
 .technic-list__button-wrapper {
   justify-content: space-between;
@@ -708,7 +754,10 @@
   padding: 0;
 }
 .repair-list__button:hover {
-  background-color: #B5B6BC;
+  background-color: #d6d6d7;
+}
+.repair-list__button:active {
+  background-color: #e2fff3;
 }
 .repair-list__button-wrapper {
   justify-content: space-between;
@@ -742,6 +791,13 @@
   line-height: 24px;
   border: none;
   padding: none;
+  transition: color 0.1s;
+}
+.commercial__button:hover {
+  color: #b449ad;
+}
+.commercial__button:active {
+  color: #142ffa;
 }
 .commercial__button-wrapper {
   display: flex;
@@ -772,18 +828,13 @@
   position: fixed;
   top: 0;
   z-index: 101;
-  right: -320px; /*При нажатии на кнопку сделаю 0 и будет ок*/
+  right: -380px; /*При нажатии на кнопку сделаю 0 и будет ок*/
   display: none;
   flex-direction: column;
-  transition: left 1s ease;
+  transition: right 1s ease;
   border-left: 1px solid #D9FFF5;
 }
-.feedback-menu__title {
-  display: flex;
-  margin-left: 12px;
-}
-.feedback-menu__title::after {
-  content: "";
+.feedback-menu__button-exit {
   width: 40px;
   height: 40px;
   background-color: #FF3E79;
@@ -792,7 +843,20 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  left: -265px;
+  left: -60px;
+  top: -55px;
+  border: none;
+  transition: background-color 0.3s;
+}
+.feedback-menu__button-exit:hover {
+  background-color: #b449ad;
+}
+.feedback-menu__button-exit:active {
+  background-color: #142ffa;
+}
+.feedback-menu__title {
+  display: flex;
+  margin-left: 12px;
 }
 .feedback-menu__submit-button {
   width: 136px;
@@ -803,6 +867,13 @@
   color: white;
   text-align: left;
   padding-left: 20px;
+  transition: background-color 1s;
+}
+.feedback-menu__submit-button:hover {
+  background-color: #b449ad;
+}
+.feedback-menu__submit-button:active {
+  background-color: #142ffa;
 }
 .feedback-menu__submit-button-wrapper {
   display: flex;
@@ -840,6 +911,21 @@
 }
 .feedback-menu__confirm-text-important {
   color: #FF3E79;
+  transition: background-color 1s;
+}
+.feedback-menu__confirm-text-important:hover {
+  color: #b449ad;
+}
+.feedback-menu__confirm-text-important:active {
+  color: #142ffa;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
 }
 
 .order-call {
@@ -854,11 +940,31 @@
   position: fixed;
   top: 0;
   z-index: 101;
-  right: -320px; /*При нажатии на кнопку сделаю 0 и будет ок*/
+  right: -380px; /*При нажатии на кнопку сделаю 0 и будет ок*/
   display: none;
   flex-direction: column;
-  transition: left 1s ease;
+  transition: right 1s ease;
   border-left: 1px solid #D9FFF5;
+}
+.order-call__button-exit {
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  border-radius: 20px;
+  background-image: url(./icons/exit-burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: -60px;
+  top: -55px;
+  border: none;
+  transition: background-color 0.3s;
+}
+.order-call__button-exit:hover {
+  background-color: #b449ad;
+}
+.order-call__button-exit:active {
+  background-color: #142ffa;
 }
 .order-call__input {
   width: 288px;
@@ -880,6 +986,13 @@
 }
 .order-call__confirm-text-important {
   color: #FF3E79;
+  transition: background-color 1s;
+}
+.order-call__confirm-text-important:hover {
+  color: #b449ad;
+}
+.order-call__confirm-text-important:active {
+  color: #142ffa;
 }
 .order-call__submit-button {
   width: 136px;
@@ -890,6 +1003,13 @@
   color: white;
   text-align: left;
   padding-left: 20px;
+  transition: background-color 1s;
+}
+.order-call__submit-button:hover {
+  background-color: #b449ad;
+}
+.order-call__submit-button:active {
+  background-color: #142ffa;
 }
 .order-call__submit-button-wrapper {
   display: flex;
@@ -912,17 +1032,17 @@
   margin-left: 12px;
   color: #1B1C21;
 }
-.order-call__title::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-color: #FF3E79;
-  border-radius: 20px;
-  background-image: url(./icons/exit-burger.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  left: -265px;
+
+.visible {
+  right: 0; /*это висибл для ордер колл*/
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
 }
 
 .message-input {
@@ -940,6 +1060,9 @@
 }
 
 @media (min-width: 768px) {
+  .menu {
+    width: 320px;
+  }
   .footer__text {
     width: 215px;
   }
@@ -1384,6 +1507,69 @@
   }
   .repair-slide-hidden:nth-child(7), .repair-slide-hidden:nth-child(8) {
     display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  .body {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1920px;
+  }
+  .body-part {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+  .menu {
+    position: static;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    display: block;
+    min-height: 1800px;
+  }
+  .menu-open {
+    display: none;
+  }
+  .menu__header__button-exit-burger {
+    display: none;
+  }
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+  }
+  .main__title-wrappper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+  .slidemenu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+  .repair-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+  .technic-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+  .price-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
   }
 }
 

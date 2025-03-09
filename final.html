@@ -9,6 +9,47 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body class="body">
+
+
+
+
+    <div class="menu"> 
+        <header class="menu__header">
+            <div class="menu__header__button-exit-wrapper">
+                <button type="button" class="menu__header__button menu__header__button-exit-burger"></button>
+                <div class="menu__header__logo">
+                <img src="./icons/logo.svg" alt="Логотип CPS"> 
+                </div>
+            </div>
+                <button type="button" class="menu__header__button menu__header__button-search"></button>
+        </header>
+    <ul class="menu__list">             
+    <li class="menu__item"><button type="button" class="menu__button-item active">Ремонт техники</button></li>
+    <li class="menu__item"><button type="button" class="menu__button-item">Услуги и сервисы</button></li>
+    <li class="menu__item"><button type="button" class="menu__button-item">Корпоративным клиентам</button></li>   
+    <li class="menu__item"><button type="button" class="menu__button-item">Продавцам техники</button></li> 
+    <li class="menu__item"><button type="button" class="menu__button-item">Партнерам</button></li>
+    <li class="menu__item"><button type="button" class="menu__button-item">Производителям</button></li>
+    <li class="menu__item"><button type="button" class="menu__button-item">Наши сервисные центры</button></li>
+    <li class="menu__item"><button type="button" class="menu__button-item">Контакты</button></li>
+    </ul>
+    <div class="menu__contacts"> 
+    <button type="button" class="menu__button menu__button-tele"></button>
+    <button type="button" class="menu__button menu__button-message"></button>
+    <button type="button" class="menu__button menu__button-contacts"></button>
+    </div>
+    <div class="menu__email-wrapper"><a class="menu__email" href="mailto:mail@cps.com">mail@cps.com</a></div>
+    <div class="menu__number-wrapper"><a class="menu__number" href="tel:88008908900">8 800 890 8900</a></div>
+    <div class="menu__language">
+    <p class="menu__language-item menu__active-language">RU</p><p class="menu__language-item">EN</p><p class="menu__language-item">CH</p>
+    </div>
+    </div>
+    
+    
+
+
+
+<div class="body-part">
     <header class="header">
         <div class="header__left">
             <button type="button" class="header__button header__button-burger"> 
@@ -64,6 +105,7 @@
         <p class="content__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
     <div class="content__paragraph-wrapper">
         <p class="content__paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера.</p>
+        <p class="content__paragraph content__paragraph-more none">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
     </div>
     <div class="content__button-wrapper"> 
         <button type="button" class="content__button">Читать далее</button>  
@@ -74,39 +116,6 @@
 </div>
 </div>
 <!--Боковое меню-->
-
-<div class="menu"> 
-    <header class="menu__header">
-        <div class="menu__header__button-exit-wrapper">
-            <button type="button" class="menu__header__button menu__header__button-exit-burger"></button>
-            <div class="menu__header__logo">
-            <img src="./icons/logo.svg" alt="Логотип CPS"> 
-            </div>
-        </div>
-            <button type="button" class="menu__header__button menu__header__button-search"></button>
-    </header>
-<ul class="menu__list">             
-<li class="menu__item"><button type="button" class="menu__button-item active">Ремонт техники</button></li>
-<li class="menu__item"><button type="button" class="menu__button-item">Услуги и сервисы</button></li>
-<li class="menu__item"><button type="button" class="menu__button-item">Корпоративным клиентам</button></li>   
-<li class="menu__item"><button type="button" class="menu__button-item">Продавцам техники</button></li> 
-<li class="menu__item"><button type="button" class="menu__button-item">Партнерам</button></li>
-<li class="menu__item"><button type="button" class="menu__button-item">Производителям</button></li>
-<li class="menu__item"><button type="button" class="menu__button-item">Наши сервисные центры</button></li>
-<li class="menu__item"><button type="button" class="menu__button-item">Контакты</button></li>
-</ul>
-<div class="menu__contacts"> 
-<button type="button" class="menu__button menu__button-tele"></button>
-<button type="button" class="menu__button menu__button-message"></button>
-<button type="button" class="menu__button menu__button-contacts"></button>
-</div>
-<div class="menu__email-wrapper"><a class="menu__email" href="mailto:mail@cps.com">mail@cps.com</a></div>
-<div class="menu__number-wrapper"><a class="menu__number" href="tel:88008908900">8 800 890 8900</a></div>
-<div class="menu__language">
-<p class="menu__language-item menu__active-language">RU</p><p class="menu__language-item">EN</p><p class="menu__language-item">CH</p>
-</div>
-</div>
-
 
 <!--Начало первого слайдера-->
 <div class="repair-list">
@@ -177,23 +186,23 @@
         </div>
     
         <div class="technic-list-slider__slide swiper-slide technic-slide">
-            <div class="technic-list-slider__name">Ремон ноутбуков</div>
+            <div class="technic-list-slider__name">Ремонт планшетов </div>
         </div>
     
         <div class="technic-list-slider__slide swiper-slide technic-slide">
-            <div class="technic-list-slider__name">Ремон ноутбуков</div>
+            <div class="technic-list-slider__name">Ремонт ПК</div>
         </div>
     
         <div class="technic-list-slider__slide swiper-slide technic-slide technic-slide-hidden">
-            <div class="technic-list-slider__name">Ремон ноутбуков</div>
+            <div class="technic-list-slider__name">Ремонт  мониторов</div>
         </div>
     
         <div class="technic-list-slider__slide swiper-slide technic-slide technic-slide-hidden">
-            <div class="technic-list-slider__name">Ремон ноутбуков</div>
+            <div class="technic-list-slider__name">Ремонт ноутбуков</div>
         </div>
       
         <div class="technic-list-slider__slide swiper-slide technic-slide technic-slide-hidden">
-            <div class="technic-list-slider__name">Ремон ноутбуков</div>
+            <div class="technic-list-slider__name">Ремонт ПК</div>
         </div>
         
     </div>
@@ -278,9 +287,10 @@
 
         </div>
 </div>
-
+<!--Обратная связь-->
 <div class="feedback-menu">
     <h2 class="feedback-menu__title">Обратная связь</h2>
+    <button class="feedback-menu__button-exit" type="button"></button>
     <form class="feedback-menu__form" action="" method="get">
         <p class="feedback-menu__input-wrapper">
           <input class="feedback-menu__input" type="text" name="name" id="name" placeholder="Имя" required>
@@ -304,7 +314,8 @@
 </div>
 
 <div class="order-call">
-    <h2 class="order-call__title">Обратная связь</h2>
+    <h2 class="order-call__title">Заказать звонок</h2>
+    <button class="order-call__button-exit" type="button"></button>
     <form class="order-call__form" action="" method="get">
         <p class="order-call__input-wrapper">
             <input class="order-call__input" type="tel" name="telephone" id="telephone" placeholder="Телефон" required>
@@ -328,6 +339,7 @@
 </footer>
 </main>
 <div class="body-blur"></div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
