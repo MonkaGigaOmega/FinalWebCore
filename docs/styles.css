@@ -1,19 +1,18 @@
-@charset "UTF-8";
 @font-face {
   font-family: "TT Lakes";
-  src: url("./tree/main/fonts/TTLakes-Bold.woff") format("woff");
+  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("./tree/main/fonts/TTLakes-Regular.woff") format("woff");
+  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("./tree/main/fonts/TTLakes-Medium.woff") format("woff");
+  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Medium.woff") format("woff");
   font-weight: 500;
   font-style: medium;
 }
@@ -28,7 +27,8 @@
   top: 0;
   left: 0;
   z-index: 10;
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   display: none;
 }
 
@@ -73,13 +73,13 @@
   background-color: #142ffa;
 }
 .main__input-request {
-  background-image: url(./tree/main/icons/pupa.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/pupa.svg);
   z-index: 1;
   background-repeat: no-repeat;
   background-position: center;
 }
 .main__input-status {
-  background-image: url(./tree/main/icons/lupa.png);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/lupa.png);
   z-index: 1;
   background-repeat: no-repeat;
   background-position: center;
@@ -133,17 +133,17 @@
   background-color: #142ffa;
 }
 .header__button-burger {
-  background-image: url(./tree/main/icons/burger-button.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/burger-button.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .header__button-request {
-  background-image: url(./tree/main/icons/pupa.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/pupa.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .header__button-status {
-  background-image: url(./tree/main/icons/lupa.png);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/lupa.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -225,9 +225,12 @@
   justify-content: space-between;
   margin: 12px 0 16px 16px;
 }
+.content__button-wrapper--flipped::before {
+  transform: rotate(180deg);
+}
 .content__button-wrapper::before {
   content: "";
-  background-image: url(./tree/main/icons/str.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/str.svg);
   width: 24px;
   height: 24px;
   position: relative;
@@ -247,21 +250,25 @@
   color: #1b1c21;
 }
 .content__paragraph-wrapper {
-  display: none;
+  display: block;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .extra-tele {
-  background-image: url(./tree/main/icons/tele.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/tele.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .extra-message {
-  background-image: url(./tree/main/icons/message.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/message.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .extra-human {
-  background-image: url(./tree/main/icons/human.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/human.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -282,10 +289,10 @@
   z-index: 101;
   left: -400px;
   display: none;
-  transition: left 1s ease; /* Добавляем плавный переход */
+  transition: left 1s ease;
 }
 .menu-open {
-  display: block; /*было в боди блюр*/
+  display: block;
 }
 .menu-open-left {
   display: block;
@@ -355,19 +362,19 @@
   background-color: #142ffa;
 }
 .menu__button-tele {
-  background-image: url(./tree/main/icons/tele.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/tele.svg);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
 }
 .menu__button-message {
-  background-image: url(./tree/main/icons/message.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/message.svg);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
 }
 .menu__button-contacts {
-  background-image: url(./tree/main/icons/human.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/human.svg);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
@@ -420,11 +427,11 @@
   background-color: #142ffa;
 }
 .menu__header__button-exit-burger {
-  background: url(./tree/main/icons/exit-burger.svg) no-repeat center, #ff3e79;
+  background: url(https://monkagigaomega.github.io/FirstKata/icons/exit-burger.svg) no-repeat center, #ff3e79;
   z-index: 2;
 }
 .menu__header__button-search {
-  background: url(./tree/main/icons/lupa2.svg) no-repeat center, #ff3e79;
+  background: url(https://monkagigaomega.github.io/FirstKata/icons/lupa2.svg) no-repeat center, #ff3e79;
   z-index: 2;
 }
 .menu__header__button-exit-wrapper {
@@ -442,7 +449,7 @@
   width: 8px;
   height: 32px;
   background-color: #41f6d7;
-  top: 138px;
+  top: 192px;
   left: -4px;
   border-radius: 4px;
 }
@@ -520,6 +527,9 @@
 }
 .price-list__slide-content {
   padding-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .price-list__slide-title {
   margin: 4px 0px;
@@ -527,8 +537,6 @@
 }
 .price-list__slide-button {
   position: relative;
-  left: 140px;
-  top: -40px;
   width: 119px;
   height: 32px;
   border: none;
@@ -541,6 +549,8 @@
   box-sizing: border-box;
   padding-left: 12px;
   transition: background-color 0.3s;
+  margin-top: auto;
+  margin-bottom: 16px;
 }
 .price-list__slide-button:hover {
   background-color: #b449ad;
@@ -553,15 +563,16 @@
   display: flex;
   align-items: center;
   position: relative;
+  margin-left: -32px;
 }
 .price-list__slide-button-wrapper::after {
   content: "";
   position: relative;
-  left: 115px;
-  top: -40px;
+  left: -28px;
+  top: 67px;
   width: 20px;
   height: 20px;
-  background-image: url(./tree/main/icons/str-right.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/str-right.svg);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
@@ -575,14 +586,13 @@
   margin: auto 16px 16px auto;
   width: 40px;
   height: 40px;
-  background-image: url(./tree/main/icons/go.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/go.svg);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
 }
 .technic-list {
   margin-bottom: 92px;
-  /*от репаира внизу*/
   min-width: 320px;
   height: 234px;
   max-width: 767px;
@@ -626,10 +636,6 @@
   display: none;
   transition: top 1s ease;
 }
-.technic-list--expanded {
-  height: 460px;
-  transition: height 0.7s ease;
-}
 .technic-list-slider {
   padding: 0 16px;
   overflow: hidden;
@@ -671,7 +677,7 @@
   margin: 16px;
   width: 40px;
   height: 40px;
-  background-image: url(./tree/main/icons/go.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/go.svg);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
@@ -769,10 +775,6 @@
   display: none;
   transition: top 1s ease;
 }
-.repair-list--expanded {
-  height: 400px;
-  transition: height 0.7s ease;
-}
 
 .commercial {
   margin-top: 60px;
@@ -792,6 +794,7 @@
   border: none;
   padding: none;
   transition: color 0.1s;
+  cursor: pointer;
 }
 .commercial__button:hover {
   color: #b449ad;
@@ -811,7 +814,7 @@
   top: -7px;
   height: 24px;
   background-position: center;
-  background-image: url(./tree/main/icons/pink-str.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/pink-str.svg);
 }
 
 .feedback {
@@ -828,7 +831,7 @@
   position: fixed;
   top: 0;
   z-index: 101;
-  right: -380px; /*При нажатии на кнопку сделаю 0 и будет ок*/
+  right: -380px;
   display: none;
   flex-direction: column;
   transition: right 1s ease;
@@ -839,12 +842,12 @@
   height: 40px;
   background-color: #ff3e79;
   border-radius: 20px;
-  background-image: url(./tree/main/icons/exit-burger.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/exit-burger.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  left: -60px;
-  top: -55px;
+  left: 16px;
+  top: -130px;
   border: none;
   transition: background-color 0.3s;
 }
@@ -857,6 +860,19 @@
 .feedback-menu__title {
   display: flex;
   margin-left: 12px;
+  color: #1b1c21;
+  margin-top: 104px;
+}
+.feedback-menu__title-wrapper ::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 4px;
+  height: 40px;
+  background-color: #41f6d7;
+  border-radius: 0 4px 4px 0;
+  left: -200px;
+  top: -2px;
 }
 .feedback-menu__submit-button {
   width: 136px;
@@ -889,7 +905,10 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  background-image: url(./tree/main/icons/str-right.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/str-right.svg);
+}
+.feedback-menu__form {
+  margin-top: -50px;
 }
 .feedback-menu__input {
   width: 288px;
@@ -940,7 +959,7 @@
   position: fixed;
   top: 0;
   z-index: 101;
-  right: -380px; /*При нажатии на кнопку сделаю 0 и будет ок*/
+  right: -380px;
   display: none;
   flex-direction: column;
   transition: right 1s ease;
@@ -951,12 +970,12 @@
   height: 40px;
   background-color: #ff3e79;
   border-radius: 20px;
-  background-image: url(./tree/main/icons/exit-burger.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/exit-burger.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  left: -60px;
-  top: -55px;
+  left: 16px;
+  top: -130px;
   border: none;
   transition: background-color 0.3s;
 }
@@ -1025,16 +1044,31 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  background-image: url(./tree/main/icons/str-right.svg);
+  background-image: url(https://monkagigaomega.github.io/FirstKata/icons/str-right.svg);
 }
 .order-call__title {
   display: flex;
   margin-left: 12px;
   color: #1b1c21;
+  margin-top: 104px;
+}
+.order-call__title-wrapper ::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 4px;
+  height: 40px;
+  background-color: #41f6d7;
+  border-radius: 0 4px 4px 0;
+  left: -212px;
+  top: -2px;
+}
+.order-call__form {
+  margin-top: -50px;
 }
 
 .visible {
-  right: 0; /*это висибл для ордер колл*/
+  right: 0;
 }
 
 .flex {
@@ -1057,6 +1091,15 @@
   padding-top: 16px;
   height: 81px;
   padding-bottom: 25px;
+  line-height: 16px;
+  font-size: 14px;
+}
+.footer__text {
+  margin-bottom: 16px;
+}
+
+.offert {
+  padding-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -1090,12 +1133,19 @@
     min-width: 768px;
     max-width: 1119px;
   }
+  .price-list__slide-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 32px;
+    gap: 22px;
+  }
   .price-list__slide-button {
     left: 0;
     top: 0;
   }
   .price-list__slide-button-wrapper::after {
-    top: 0px;
+    top: -8px;
     left: -25px;
   }
   .price-list__slide-title {
@@ -1131,6 +1181,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 196px 0 16px;
+    gap: 22px;
   }
   .price-list-header-content__item-name {
     flex: 1 1;
@@ -1186,6 +1237,10 @@
     padding-bottom: 16px;
     margin: 0;
   }
+  .technic-list--expanded {
+    height: 460px;
+    transition: height 0.7s ease;
+  }
   .technic-list__title {
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -1202,12 +1257,12 @@
     padding-left: 24px;
     margin-bottom: 16px;
   }
-  .technic-list__button--flipped::after {
-    transform: rotate(180deg);
-  }
   .technic-list__button-wrapper {
     display: flex;
     margin-left: 24px;
+  }
+  .technic-list__button-wrapper--flipped::after {
+    transform: rotate(180deg);
   }
   .technic-list__button-wrapper--down {
     top: 430px;
@@ -1219,7 +1274,7 @@
     left: -130px;
     width: 24px;
     height: 24px;
-    background: url(./tree/main/icons/str.svg) no-repeat center;
+    background: url(https://monkagigaomega.github.io/FirstKata/icons/str.svg) no-repeat center;
     z-index: 1;
   }
   .technic-list-slider {
@@ -1287,6 +1342,10 @@
     min-width: 768px;
     max-width: 1119px;
   }
+  .repair-list--expanded {
+    height: 400px;
+    transition: height 0.7s ease;
+  }
   .repair-list__button-wrapper {
     display: flex;
     margin-left: 24px;
@@ -1304,7 +1363,7 @@
     left: -130px;
     width: 24px;
     height: 24px;
-    background: url(./tree/main/icons/str.svg) no-repeat center;
+    background: url(https://monkagigaomega.github.io/FirstKata/icons/str.svg) no-repeat center;
     z-index: 1;
   }
   .repair-list__header {
@@ -1397,7 +1456,6 @@
   .commercial__button-wrapper {
     width: 326px;
     height: 24px;
-    margin-left: 16px;
   }
   .commercial__button-wrapper::after {
     top: 0px;
@@ -1536,6 +1594,20 @@
   .menu__header__button-exit-burger {
     display: none;
   }
+  .order-call__title {
+    margin-top: 40px;
+  }
+  .order-call__button-exit {
+    left: -65px;
+    top: -65px;
+  }
+  .feedback-menu__title {
+    margin-top: 40px;
+  }
+  .feedback-menu__button-exit {
+    left: -65px;
+    top: -65px;
+  }
   .main {
     margin-left: auto;
     margin-right: auto;
@@ -1571,6 +1643,4 @@
     margin-right: auto;
     width: 1120px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

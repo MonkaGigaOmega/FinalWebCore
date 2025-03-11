@@ -1,17 +1,19 @@
 import globals from "globals";
-import noCommentsPlugin from "eslint-plugin-no-comments"; // Импортируем плагин
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    files: ["**/*.js"],
-    languageOptions: { sourceType: "commonjs" },
-    plugins: {
-      "no-comments": noCommentsPlugin, // Подключаем плагин
+    files: ["**/*.js"], // Проверяем все JS-файлы
+    languageOptions: {
+      sourceType: "commonjs", // Указываем тип модуля
+      globals: globals.browser, // Добавляем глобальные переменные для браузера
     },
     rules: {
-      "no-comments/no-comments": "error", // Включаем правило для удаления комментариев
+      // Базовые правила ESLint
+      "no-unused-vars": "warn", // Предупреждение, если есть неиспользуемые переменные
+      "no-console": "warn", // Предупреждение, если используется console.log
+      "semi": ["error", "always"], // Требуем точку с запятой
+      "quotes": ["error", "single"], // Используем одинарные кавычки
     },
   },
-  { languageOptions: { globals: globals.browser } },
 ];
