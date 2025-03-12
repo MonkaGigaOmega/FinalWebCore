@@ -12,8 +12,8 @@ export default [
       // Базовые правила ESLint
       "no-unused-vars": "warn", // Предупреждение, если есть неиспользуемые переменные
       "no-console": "warn", // Предупреждение, если используется console.log
-      "semi": ["error", "always"], // Требуем точку с запятой
-      "quotes": ["error", "single"], // Используем одинарные кавычки
+      semi: ["error", "always"], // Требуем точку с запятой
+      quotes: ["error", "single"], // Используем одинарные кавычки
     },
   },
 ];

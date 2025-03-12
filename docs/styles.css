@@ -256,6 +256,9 @@
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-hidden-two {
+  overflow: hidden;
+}
 
 .extra-tele {
   background-image: url(https://monkagigaomega.github.io/FirstKata/icons/tele.svg);
@@ -278,7 +281,7 @@
   min-width: 320px;
   max-width: 360px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-style: medium;
   font-weight: 500;
   box-shadow: 10px 0 50px -10px rgb(159, 174, 189);
@@ -290,6 +293,7 @@
   left: -400px;
   display: none;
   transition: left 1s ease;
+  padding-bottom: 50px;
 }
 .menu-open {
   display: block;
@@ -831,7 +835,7 @@
   position: fixed;
   top: 0;
   z-index: 101;
-  right: -380px;
+  right: -400px;
   display: none;
   flex-direction: column;
   transition: right 1s ease;
@@ -959,7 +963,7 @@
   position: fixed;
   top: 0;
   z-index: 101;
-  right: -380px;
+  right: -400px;
   display: none;
   flex-direction: column;
   transition: right 1s ease;

@@ -1,18 +1,21 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Bold.woff") format("woff");
+  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Bold.woff")
+    format("woff");
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Regular.woff") format("woff");
+  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Medium.woff") format("woff");
+  src: url("https://monkagigaomega.github.io/ThirdKata/fonts/TTLakes-Medium.woff")
+    format("woff");
   font-weight: 500;
   font-style: medium;
 }
@@ -251,9 +254,12 @@
     }
   }
 }
-.overflow{
-  &-hidden{
+.overflow {
+  &-hidden {
     overflow: hidden;
+    &-two {
+      overflow: hidden;
+    }
   }
 }
 .extra {
@@ -278,7 +284,7 @@
   min-width: 320px;
   max-width: 360px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-style: medium;
   font-weight: 500;
   box-shadow: 10px 0 50px -10px rgb(159, 174, 189);
@@ -290,6 +296,7 @@
   left: -400px;
   display: none;
   transition: left 1s ease;
+  padding-bottom: 50px;
   &-open {
     display: block;
     &-left {
@@ -425,13 +432,15 @@
       }
       &-exit-burger {
         background:
-          url(https://monkagigaomega.github.io/FirstKata/icons/exit-burger.svg) no-repeat center,
+          url(https://monkagigaomega.github.io/FirstKata/icons/exit-burger.svg)
+            no-repeat center,
           #ff3e79;
         z-index: 2;
       }
       &-search {
         background:
-          url(https://monkagigaomega.github.io/FirstKata/icons/lupa2.svg) no-repeat center,
+          url(https://monkagigaomega.github.io/FirstKata/icons/lupa2.svg)
+            no-repeat center,
           #ff3e79;
         z-index: 2;
       }
@@ -531,7 +540,7 @@
         padding-left: 12px;
         display: flex;
         justify-content: space-between;
-        width:100%;
+        width: 100%;
       }
       &-title {
         margin: 4px 0px;
@@ -569,7 +578,7 @@
             content: "";
             position: relative;
             left: -28px;
-    top: 67px;
+            top: 67px;
             width: 20px;
             height: 20px;
             background-image: url(https://monkagigaomega.github.io/FirstKata/icons/str-right.svg);
@@ -837,7 +846,7 @@
     position: fixed;
     top: 0;
     z-index: 101;
-    right: -380px;
+    right: -400px;
     display: none;
     flex-direction: column;
     transition: right 1s ease;
@@ -868,18 +877,18 @@
       display: flex;
       margin-left: 12px;
       color: #1b1c21;
-      margin-top:104px;
-      &-wrapper{
-        ::after{
-          content:"";
+      margin-top: 104px;
+      &-wrapper {
+        ::after {
+          content: "";
           display: block;
           position: relative;
-          width:4px;
-          height:40px;
+          width: 4px;
+          height: 40px;
           background-color: #41f6d7;
           border-radius: 0 4px 4px 0;
-          left:-200px;
-          top:-2px;
+          left: -200px;
+          top: -2px;
         }
       }
     }
@@ -918,8 +927,8 @@
         }
       }
     }
-    &__form{
-      margin-top:-50px;
+    &__form {
+      margin-top: -50px;
     }
     &__input {
       width: 288px;
@@ -972,7 +981,7 @@
     position: fixed;
     top: 0;
     z-index: 101;
-    right: -380px; 
+    right: -400px;
     display: none;
     flex-direction: column;
     transition: right 1s ease;
@@ -1068,23 +1077,23 @@
       display: flex;
       margin-left: 12px;
       color: #1b1c21;
-      margin-top:104px;
-      &-wrapper{
-        ::after{
-          content:"";
+      margin-top: 104px;
+      &-wrapper {
+        ::after {
+          content: "";
           display: block;
           position: relative;
-          width:4px;
-          height:40px;
+          width: 4px;
+          height: 40px;
           background-color: #41f6d7;
           border-radius: 0 4px 4px 0;
-          left:-212px;
-          top:-2px;
+          left: -212px;
+          top: -2px;
         }
       }
     }
-    &__form{
-      margin-top:-50px;
+    &__form {
+      margin-top: -50px;
     }
   }
 }
@@ -1111,13 +1120,13 @@
   height: 81px;
   padding-bottom: 25px;
   line-height: 16px;
-  font-size:14px;
-  &__text{
-    margin-bottom:16px;
+  font-size: 14px;
+  &__text {
+    margin-bottom: 16px;
   }
 }
-.offert{
-  padding-bottom:16px;
+.offert {
+  padding-bottom: 16px;
 }
 @media (min-width: 768px) {
   .menu {
@@ -1155,12 +1164,12 @@
       min-width: 768px;
       max-width: 1119px;
       &__slide {
-        &-wrapper{
+        &-wrapper {
           display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    margin-right: 32px;
-                    gap: 22px;
+          justify-content: space-between;
+          width: 100%;
+          margin-right: 32px;
+          gap: 22px;
         }
         &-button {
           left: 0;
@@ -1168,7 +1177,7 @@
           &-wrapper {
             &::after {
               top: -8px;
-        left: -25px;
+              left: -25px;
             }
           }
         }
@@ -1207,7 +1216,7 @@
           display: flex;
           justify-content: space-between;
           padding: 0 196px 0 16px;
-          gap:22px;
+          gap: 22px;
           &__item {
             &-name {
               flex: 1 1;
@@ -1307,7 +1316,8 @@
             left: -130px;
             width: 24px;
             height: 24px;
-            background: url(https://monkagigaomega.github.io/FirstKata/icons/str.svg) no-repeat center;
+            background: url(https://monkagigaomega.github.io/FirstKata/icons/str.svg)
+              no-repeat center;
             z-index: 1;
           }
         }
@@ -1408,7 +1418,8 @@
             left: -130px;
             width: 24px;
             height: 24px;
-            background: url(https://monkagigaomega.github.io/FirstKata/icons/str.svg) no-repeat center;
+            background: url(https://monkagigaomega.github.io/FirstKata/icons/str.svg)
+              no-repeat center;
             z-index: 1;
           }
         }
@@ -1668,28 +1679,28 @@
       }
     }
   }
-  .order{
-    &-call{
-      &__title{
-        margin-top:40px;
+  .order {
+    &-call {
+      &__title {
+        margin-top: 40px;
       }
-      &__button{
-        &-exit{
-          left:-65px;
-          top:-65px;
+      &__button {
+        &-exit {
+          left: -65px;
+          top: -65px;
         }
       }
     }
   }
-  .feedback{
-    &-menu{
-      &__title{
-        margin-top:40px;
+  .feedback {
+    &-menu {
+      &__title {
+        margin-top: 40px;
       }
-      &__button{
-        &-exit{
-          left:-65px;
-          top:-65px;
+      &__button {
+        &-exit {
+          left: -65px;
+          top: -65px;
         }
       }
     }
